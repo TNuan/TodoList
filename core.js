@@ -28,7 +28,7 @@ export function createStore(reducer) {
                 component(Object.assign({}, props, selector(state), ...args))
         },
         dispatch(action, ...args) {
-            state = reducer(state, action. args)
+            state = reducer(state, action, args)
             render()
         }
     }
